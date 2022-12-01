@@ -3,28 +3,43 @@ body{
   margin: 0;
   padding: 0;
   /* Do not change margin or padding */
-  background: #f5f7fa;
+  background:#6B3A1D;
 /* NOTE: do not change the background in media query */
-font-family: 'Open Sans', helvetica, sans-serif;
+font-family: 'Manjari', sans-serif;
+
 /* NOTE you can change the fonts but always have a backup */
 }
 /* NOTE: MOBILE STYLES BELOW --------------------- */
 
+/*
+color list
+#E9E9EA white
+#DBB880 tan
+#915B3B lite brown
+#6B3A1D brown
+#2D2E33 black
+*/
 
 
 
+header{
+  background:#DBB880;
+
+}
 /* NOTE do not change nav styles below without checking with April */
 .mainNav {
-  background: #efefef;
+  background: #E9E9EA;
   color: #1a1b18;
   height: 60px;
   position: relative;
 }
 .mainNav a {
   text-decoration: none;
+
+
 }
 .mainNav .menu {
-  background: #efefef;
+  background: #E9E9EA;
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
   border-top: 1px solid #efefef;
   display: none;
@@ -44,10 +59,11 @@ font-family: 'Open Sans', helvetica, sans-serif;
   font-weight: bold;
   display: block;
   padding: 15px;
+
 }
 .mainNav .menu a:hover {
-  background: #292938;
-  color: #efefef;
+  background: #DBB880;
+  color: #6B3A1D;
 }
 .mainNav .navBars {
   display: inline-block;
@@ -77,33 +93,91 @@ font-family: 'Open Sans', helvetica, sans-serif;
 /* NOTE: END Navigation styles --------------------- */
 
 .wrapper{
-  background: #f5f7fa;
+  background: #915B3B;
   margin: auto;
   width:90%;
   /* Width with a margin auto keeps the content from touching the edge */
   padding: 20px;
 }
 
+
+
+
+
+h2{
+  font-size:2em;
+  color: #E9E9EA;
+  text-align: center;
+  margin-left:auto;
+margin-right: auto;
+font-family:'Itim', cursive; }
+
+.medium-size{
+  font-family: 'Manjari', sans-serif;
+  margin-left:auto;
+  margin-right: auto;
+color: #E9E9EA;
+  text-align:center;
+  align-content:center;
+}
+
+
+/*this is the first cat photo. this should only affect one photo*/
+.icon{
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+  max-width:50%;
+  border-radius: 50%;
+}
+
 .grid{
+align-content:center;
+}
+
+.cathome{
+  display:inline-grid;
+  align-items:center;
+  width:200px;
+  height:200px;
+  border-radius:25%;
 
 }
-.grid div{
+
+.cats-link{
+  font-family:'Itim', cursive;
+  color:#e9e9ea;
+  text-align:center;
+  font-size:1.2em;
 
 }
 
 img{
   /* width:100%; */
   max-width: 100%;
+
 }
 /* NOTE: All other images will need a class to style the width if you want them a diffrent size */
 
 h1{
+    color: #E9E9EA;
   text-align: center;
   padding-top: 20px;
 }
 
+.list{
+  color:#e9e9ea;
+  font-size:1.2em;
+
+}
+
+.maps{
+  text-align:center;
+}
+
 footer{
-  background: rgba(69, 126, 110, 0.67);
+  background: #2D2E33;
+  color:#e9e9ea;
   text-align: center;
   padding:20px;
 }
@@ -114,11 +188,6 @@ footer{
 /* NOTE: START MEDIUM SIZE DISPLAYS ---------------------*/
 @media only screen and (min-width: 700px) {
 
-
-
-    .medium-size{
-      max-width: 700px;
-    }
 
     .two-col{
         display: grid;
@@ -132,10 +201,9 @@ footer{
         /* Note you can use this to center an element but you have to add a width */
     }
 
-
   .grid{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-column-gap: 5px;
   }
   .grid div{
