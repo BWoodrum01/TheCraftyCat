@@ -144,6 +144,15 @@ align-content:center;
 
 }
 
+p{
+  font-family: 'Manjari', sans-serif;
+  margin-left:auto;
+  margin-right: auto;
+color: #E9E9EA;
+  text-align:center;
+  align-content:center;
+}
+
 a:link{
   text-decoration:none;
 }
