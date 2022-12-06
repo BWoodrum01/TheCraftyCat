@@ -20,6 +20,84 @@ color list
 #2D2E33 black
 */
 
+/* START MOBILE FORM STYLES */
+    .form-container{
+/*       TO CENTER add AUTO for margin right and left*/
+      margin: 20px auto;
+/*  WIDTH 100%  FOR MOBILE DEVICES*/
+      width:90%;
+      display:block;
+      font-size:1em;
+      color:#e9e9ea;
+    }
+    form p{
+      margin-bottom:5px;
+
+    }
+    label{
+      display:block;
+    }
+    #newsletter input{
+      display:inline;
+      width:auto;
+    }
+    input{
+      /* FOR MOBILE use WIDTH:100% */
+      width:100%;
+      padding:1.7%;
+      margin:1.5% 0;
+      font-size: 1em;
+      border-radius: 4px;
+      border:1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea{
+      min-height:100px;
+       /* FOR MOBILE use WIDTH:100% */
+      width: 100%;
+      padding: 2%;
+      margin: 1.5% 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .map{
+ display:block;
+ width:400px;
+ height: 400px;
+ margin-left:auto;
+ margin-right:auto;
+ text-align:center;
+ border-radius:15px;
+}
+    button{
+      /* CHANGED COLORS bellow */
+      background: #DBB880;
+      border: 1px solid #DBB880;
+      /* Rounded corners */
+      border-radius: 4px;
+      /* Text color */
+      color:#6B3A1D;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding:10px 20px;
+      font-size: 1.1em;
+    }
+
+    .submit{
+      width:50px;/* CHANGED COLORS bellow */
+    background: #DBB880;
+    border: 1px solid #DBB880;
+    /* Rounded corners */
+    border-radius: 4px;
+    /* Text color */
+    color:#6B3A1D;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px 20px;
+    font-size: 1.1em;}
+  /*        END MOBILE FORM STYLES */
 
 
 header{
@@ -138,8 +216,9 @@ align-content:center;
 .cathome{
   display:inline-grid;
   align-items:center;
+  max-width:100%;
   width:200px;
-  height:200px;
+
   border-radius:25%;
 
 }
@@ -221,8 +300,8 @@ footer{
   color:#e9e9ea;
   text-align: center;
   text-indent: 0;
-  line-height: 10px;
-  margin: 0.5em;
+  line-height: 20px;
+  margin: 0.8em;
   padding: 0.5em;
 }
 
@@ -255,6 +334,7 @@ img{
   .grid div{
 
   }
+
 
 
   /* NOTE Do not change nav styles below ------------without help from April*/
@@ -296,7 +376,35 @@ img{
 /* NOTE START LARGE SCREEN STYLES BELOW ---------------- */
 @media only screen and (min-width: 1200px) {
 
+  /*         START DESKTOP FORM STYLES */
+        .form-container{
+   /*         CHANGE WIDTH of FORM TO YOUR PREFERENCE */
+          width:50%;
+        }
+        input{
+           /* CHANGE WIDTH TO YOUR PREFERENCE */
+          width:60%;
+        }
+        button{
+          margin-top: 2%;
+          margin-bottom: 2%;
+        }
+      }
+      .map{
+   display:block;
+   width:100%;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   border-radius:15px;
 
+ }
+ .group{
+   display:inline-block;
+   width:48%;
+   vertical-align: top;
+ }
+}
 
     .wrapper{
         max-width: 1700px;
