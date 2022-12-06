@@ -255,6 +255,7 @@ a:visited{
   margin-right:auto;
   align-content:center;
   text-align:center;
+  border-radius:15px;
 }
 
 .cats-link{
@@ -393,6 +394,7 @@ img{
       .map{
    display:block;
    width:100%;
+
    margin-left:auto;
    margin-right:auto;
    text-align:center;
